@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js" defer></script>
+    <script src="https://kit.fontawesome.com/04a2ad65c9.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <title>Rok Škrbec</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo"><img src="/images/logo-round.svg " alt="" /></div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://github.com/RokSkrbec"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/rok-%C5%A1krbec-b8b531182"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/rokskrbec"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/RokSkrbec"><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fas fa-code"></i>Projects</a>
+        </li>
+        <li>
+          <a href="#about"><i class="far fa-user"></i>About Me</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="far fa-envelope"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Making your ideas become the world's reality</h1>
+          <h3>Rok Škrbec</h3>
+          <h2>Front-End Web Developer and Web Designer</h2>
+          <div class="cta-wrapper">
+            <a href="#projects"><div class="cta-projects">My Projects</div></a>
+            <a href="#contact"><div class="cta-contact">Contact Me</div></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/images/hero-image.svg" alt="" />
+        </div>
+      </section>
+      <section class="projects-section" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-wrapper">
+          <div data-aos="fade-up-right" class="project-wrapper">
+            <a href="https://www.timestamper.rokskrbec.si/"
+              ><div class="image-wrapper"><img src="/images/project-6.png" alt="" /></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://www.timestamper.rokskrbec.si/"><div class="project-title">Youtube Timestamper</div></a>
+                <a href="https://github.com/RokSkrbec/timestamper"
+                  ><div class="github-link">View on <i class="fab fa-github"></i></div
+                ></a>
+              </div>
+              <a href="https://www.timestamper.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <i class="fab fa-node-js"></i></div
+              ></a>
+            </div>
+          </div>
+          <div data-aos="fade-up-left" class="project-wrapper">
+            <a href="https://www.countries-api.rokskrbec.si/"
+              ><div class="image-wrapper">
+                <video loop autoplay>
+                  <source src="./images/project-5.mp4" type="video/mp4" />
+                </video></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://www.countries-api.rokskrbec.si/"><div class="project-title">Countries API</div></a>
+                <a href="https://github.com/RokSkrbec/Countries-API"
+                  ><div class="github-link">View on <i class="fab fa-github"></i></div
+                ></a>
+              </div>
+              <a href="https://www.countries-api.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <i class="fab fa-node-js"></i></div
+              ></a>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="project-wrapper">
+            <a href="https://www.covid-19-informacije.rokskrbec.si/"
+              ><div class="image-wrapper"><img src="/images/project-4.png" alt="" /></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://www.covid-19-informacije.rokskrbec.si/"><div class="project-title">Covid-19 Informacije</div></a>
+                <a href="https://github.com/RokSkrbec/Covid-19-Informacije"
+                  ><div class="github-link">View on <i class="fab fa-github"></i></div
+                ></a>
+              </div>
+              <a href="https://www.covid-19-informacije.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i></div
+              ></a>
+            </div>
+          </div>
+          <div data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="5000" class="project-wrapper">
+            <a href="https://www.112dogodki.rokskrbec.si/"
+              ><div class="image-wrapper"><img src="/images/project-3.png" alt="" /></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://www.112dogodki.rokskrbec.si/"><div class="project-title">112 Dogodki</div></a>
+                <a href="https://github.com/RokSkrbec/112Dogodki"
+                  ><div class="github-link">View on <i class="fab fa-github"></i></div
+                ></a>
+              </div>
+              <a href="https://www.112dogodki.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i></div
+              ></a>
+            </div>
+          </div>
+          <div data-aos="fade-up-right" class="project-wrapper">
+            <a href="https://www.weather.rokskrbec.si/"
+              ><div class="image-wrapper"><img src="/images/project-2.png" alt="" /></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://www.weather.rokskrbec.si/"><div class="project-title">Weather</div></a>
+                <a href="https://github.com/RokSkrbec/weather-app"
+                  ><div class="github-link">View on <i class="fab fa-github"></i></div
+                ></a>
+              </div>
+              <a href="https://www.weather.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i></div
+              ></a>
+            </div>
+          </div>
+          <div data-aos="fade-up-left" class="project-wrapper">
+            <a href="https://golazijada.rokskrbec.si/"
+              ><div class="image-wrapper"><img src="/images/project-1.png" alt="" /></div
+            ></a>
+            <div class="text-wrapper">
+              <div class="upper-wrapper">
+                <a href="https://golazijada.rokskrbec.si/"><div class="project-title">Golažijada</div></a>
+                <a href="https://golazijada.rokskrbec.si/"><div class="github-link">Wordpress</div></a>
+              </div>
+              <a href="https://golazijada.rokskrbec.si/"
+                ><div class="lower-wrapper">Tech used: <i class="fab fa-wordpress"></i></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+          <div class="about-image"><img src="/images/profile-image.jpg" alt="" /></div>
+          <div class="about-text">
+            Motivated developer and computer enthusiast interested in everything about technology. My strengths are responsibility, accuracy and reliability. I am eager to take on new challenges in
+            all fields of computer science. I have quite a bit of experience in the field of data capture and processing, and am now focusing on gaining new knowledge in web development, primarily in
+            the fields of web application and UI development.
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <h1>Contact</h1>
+        <div class="alert">Your message has been sent</div>
+        <div class="contact-form-wrapper">
+          <form id="contact-form">
+            <p><label>Name *</label> <input type="text" name="name" id="name" required /></p>
+            <p><label>Company</label> <input type="text" name="company" id="company" /></p>
+            <p><label>Email Address *</label> <input type="email" name="email" id="email" required /></p>
+            <p><label>Phone Number</label> <input type="text" name="phone" id="phone" /></p>
+            <p class="full"><label>Message</label><textarea name="message" id="message" rows="5"></textarea></p>
+
+            <p class="full"><button type="submit">Submit</button></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>copyright &copy; 2020</footer>
+  </body>
+</html>

@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Oswald&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: 'Oswald', sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
+}
+
+body header .header-wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .header-wrapper .logo img {
+  width: 3rem;
+}
+
+body header .header-wrapper .social ul {
+  list-style: none;
+}
+
+body header .header-wrapper .social ul li a {
+  text-decoration: none;
+  color: #191654;
+  font-size: 2rem;
+  padding: 0.2rem 0.3rem;
+}
+
+body nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #43c6ac;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #191654, #43c6ac);
+  padding: 0.5rem 0;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body nav ul li {
+  margin: 0.2rem;
+}
+
+body nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+body nav ul li a:hover {
+  background-color: red;
+}
+
+body nav ul li i {
+  font-size: 1.7rem;
+}
+
+body main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .hero-section {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+body main .hero-section .hero-text h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 3.1rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(45deg, #191654, #43c6ac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+body main .hero-section .hero-text h3 {
+  font-size: 1.2rem;
+  color: #191654;
+  text-align: center;
+}
+
+body main .hero-section .hero-text h2 {
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: #191654;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+body main .hero-section .hero-text .cta-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .hero-section .hero-text .cta-wrapper .cta-projects,
+body main .hero-section .hero-text .cta-wrapper .cta-contact {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 1.2rem 3.2rem;
+  background-color: #191654;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+body main .hero-section .hero-text .cta-wrapper .cta-contact {
+  margin-left: 0.5rem;
+  background-color: #43c6ac;
+}
+
+body main .hero-section .hero-image {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .hero-section .hero-image img {
+  width: 80%;
+}
+
+body main .projects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+body main .projects-section h1 {
+  font-size: 3rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+body main .projects-section .projects-wrapper {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 5rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper {
+  padding: 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+body main .projects-section .projects-wrapper .project-wrapper:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+body main .projects-section .projects-wrapper .project-wrapper a {
+  text-decoration: none;
+  color: #191654;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .image-wrapper img {
+  width: 100%;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .image-wrapper video {
+  width: 85%;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper {
+  padding: 0 2rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .upper-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .upper-wrapper .project-title {
+  font-size: 2.2rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .upper-wrapper .github-link {
+  font-size: 1.4rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .upper-wrapper .github-link i {
+  font-size: 2rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper {
+  font-size: 1.4rem;
+  color: #36393f;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper i {
+  font-size: 1.6rem;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper .fa-html5 {
+  color: #e34236;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper .fa-css3-alt {
+  color: #264de4;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper .fa-js {
+  color: #f0db4f;
+}
+
+body main .projects-section .projects-wrapper .project-wrapper .text-wrapper .lower-wrapper .fa-node-js {
+  color: #3c873a;
+}
+
+body main .about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .about-section h1 {
+  font-size: 3rem;
+  font-family: 'Heebo', sans-serif;
+  margin-bottom: 2rem;
+}
+
+body main .about-section .about-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .about-section .about-container .about-image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+body main .about-section .about-container .about-image img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+body main .about-section .about-container .about-text {
+  width: 90%;
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #36393f;
+}
+
+body main .contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+  background-image: url("../images/contact-light.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 8rem;
+}
+
+body main .contact-section h1 {
+  font-size: 3rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+body main .contact-section .alert {
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #79c879;
+  color: linear-gradient(45deg, #191654, #43c6ac);
+  display: none;
+}
+
+body main .contact-section .contact-form-wrapper {
+  width: 80%;
+}
+
+body main .contact-section .contact-form-wrapper form label {
+  display: block;
+  font-size: 1.4rem;
+  color: #36393f;
+}
+
+body main .contact-section .contact-form-wrapper form button,
+body main .contact-section .contact-form-wrapper form input,
+body main .contact-section .contact-form-wrapper form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0px solid #191654;
+  resize: none;
+  border-radius: 0.5rem;
+  background: #f5f5f5;
+}
+
+body main .contact-section .contact-form-wrapper form input,
+body main .contact-section .contact-form-wrapper form textarea {
+  margin-bottom: 1rem;
+}
+
+body main .contact-section .contact-form-wrapper form input:focus,
+body main .contact-section .contact-form-wrapper form textarea:focus {
+  outline: 1px solid #191654;
+}
+
+body main .contact-section .contact-form-wrapper form button {
+  background: #43c6ac;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+@media all and (min-width: 700px) {
+  body header .header-wrapper .logo img {
+    width: 4rem;
+  }
+  body header .header-wrapper .social ul li a {
+    font-size: 2.5rem;
+  }
+  body main .hero-section {
+    width: 80%;
+  }
+  body main .hero-section .hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+  }
+  body main .hero-section .hero-text h3 {
+    font-size: 1.6rem;
+  }
+  body main .hero-section .hero-text h2 {
+    font-size: 2.4rem;
+  }
+  body main .hero-section .hero-text .cta-wrapper .cta-projects,
+  body main .hero-section .hero-text .cta-wrapper .cta-contact {
+    font-size: 1.6rem;
+  }
+  body main .projects-section h1 {
+    font-size: 4rem;
+  }
+  body main .projects-section .projects-wrapper {
+    width: 80%;
+  }
+  body main .about-section {
+    width: 70%;
+  }
+  body main .about-section h1 {
+    font-size: 4rem;
+  }
+  body main .about-section .about-container .about-text {
+    font-size: 1.6rem;
+  }
+  body main .contact-section {
+    width: 70%;
+  }
+  body main .contact-section h1 {
+    font-size: 4rem;
+  }
+  body main .contact-section .contact-form-wrapper form label {
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  body main .hero-section {
+    width: 70%;
+    margin-top: 7rem;
+  }
+  body main .hero-section h3 {
+    margin-top: 4rem;
+  }
+  body main .hero-section .cta-wrapper {
+    margin-top: 8rem;
+  }
+  body main .projects-section .projects-wrapper {
+    width: 70%;
+  }
+  body main .about-section {
+    width: 60%;
+  }
+  body main .about-section .about-container .about-image {
+    width: 60%;
+  }
+  body main .contact-section {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  body header {
+    margin-top: 6rem;
+  }
+  body nav {
+    top: 0;
+    height: 5.5rem;
+  }
+  body main .hero-section {
+    height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    padding-top: 6rem;
+    margin-top: -6rem;
+  }
+  body main .hero-section .hero-text h1 {
+    font-size: 4.5rem;
+    line-height: 4.4rem;
+    text-align: left;
+  }
+  body main .hero-section .hero-text h3 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  body main .hero-section .hero-text h2 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  body main .hero-section .hero-text .cta-wrapper {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .hero-section .hero-text .cta-wrapper .cta-projects,
+  body main .hero-section .hero-text .cta-wrapper .cta-contact {
+    font-size: 2rem;
+  }
+  body main .projects-section {
+    padding-top: 6rem;
+    margin-top: -6rem;
+  }
+  body main .projects-section h1 {
+    font-size: 4.5rem;
+  }
+  body main .projects-section .projects-wrapper {
+    width: 80%;
+  }
+  body main .about-section {
+    padding-top: 6rem;
+    margin-top: -6rem;
+    margin-bottom: 5rem;
+  }
+  body main .about-section h1 {
+    font-size: 4rem;
+  }
+  body main .about-section .about-container .about-image {
+    width: 50%;
+  }
+  body main .about-section .about-container .about-text {
+    font-size: 1.6rem;
+  }
+  body main .contact-section {
+    padding-top: 6rem;
+    margin-top: -6rem;
+    width: 60%;
+  }
+  body main .contact-section h1 {
+    font-size: 4rem;
+  }
+  body main .contact-section .contact-form-wrapper form label {
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  body main .hero-section {
+    width: 60%;
+  }
+  body main .projects-section .projects-wrapper {
+    width: 60%;
+  }
+  body main .about-section {
+    width: 50%;
+  }
+  body main .contact-section .contact-form-wrapper {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
