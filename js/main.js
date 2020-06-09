@@ -4,14 +4,14 @@ AOS.init({
 })
 
 var firebaseConfig = {
-  apiKey: 'AIzaSyDEPk7SPzH4Gom__XdFs_kUn5LeRoHR50M',
-  authDomain: 'portfolio-contact-form-8d8e6.firebaseapp.com',
-  databaseURL: 'https://portfolio-contact-form-8d8e6.firebaseio.com',
-  projectId: 'portfolio-contact-form-8d8e6',
-  storageBucket: 'portfolio-contact-form-8d8e6.appspot.com',
-  messagingSenderId: '625368907107',
-  appId: '1:625368907107:web:730bd9fb6840ed91d56756',
-  measurementId: 'G-KP40MZKK28',
+  apiKey: firebaseApiKey,
+  authDomain: firebaseAuthDomain,
+  databaseURL: firebaseDatabaseURL,
+  projectId: firebaseProjectId,
+  storageBucket: firebaseStorageBucket,
+  messagingSenderId: firebaseMessagingSenderId,
+  appId: firebaseAppId,
+  measurementId: firebaseMeasurementId,
 }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
