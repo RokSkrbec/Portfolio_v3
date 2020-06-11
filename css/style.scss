@@ -73,7 +73,7 @@ body {
           border-radius: 0.5rem;
           font-size: 1.2rem;
           &:hover {
-            background-color: red;
+            background: linear-gradient(45deg, #191654, #43c6ac);
           }
         }
         i {
@@ -131,6 +131,9 @@ body {
             color: #fff;
             border-radius: 0.5rem;
             text-transform: uppercase;
+            &:hover {
+              background: linear-gradient(45deg, #191654, #43c6ac);
+            }
           }
 
           .cta-contact {
@@ -337,6 +340,10 @@ body {
             font-size: 1.5rem;
             color: #fff;
             cursor: pointer;
+
+            &:hover {
+              background: linear-gradient(45deg, #191654, #43c6ac);
+            }
           }
         }
       }

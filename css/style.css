@@ -100,7 +100,7 @@ body nav ul li a {
 }
 
 body nav ul li a:hover {
-  background-color: red;
+  background: linear-gradient(45deg, #191654, #43c6ac);
 }
 
 body nav ul li i {
@@ -180,6 +180,11 @@ body main .hero-section .hero-text .cta-wrapper .cta-contact {
   color: #fff;
   border-radius: 0.5rem;
   text-transform: uppercase;
+}
+
+body main .hero-section .hero-text .cta-wrapper .cta-projects:hover,
+body main .hero-section .hero-text .cta-wrapper .cta-contact:hover {
+  background: linear-gradient(45deg, #191654, #43c6ac);
 }
 
 body main .hero-section .hero-text .cta-wrapper .cta-contact {
@@ -460,6 +465,10 @@ body main .contact-section .contact-form-wrapper form button {
   font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
+}
+
+body main .contact-section .contact-form-wrapper form button:hover {
+  background: linear-gradient(45deg, #191654, #43c6ac);
 }
 
 body footer {
