@@ -48,6 +48,12 @@ body header .header-wrapper .social ul li a {
   padding: 0.2rem 0.3rem;
 }
 
+body header .header-wrapper .social ul li a:hover {
+  background: -webkit-linear-gradient(45deg, #191654, #43c6ac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body nav {
   position: fixed;
   bottom: 0;
